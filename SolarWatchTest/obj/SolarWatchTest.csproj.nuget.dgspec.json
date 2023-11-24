@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatchTest\\SolarWatchTest.csproj": {}
+    "D:\\Projektek\\Advance\\SolarWatch\\SolarWatchTest\\SolarWatchTest.csproj": {}
   },
   "projects": {
-    "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatchTest\\SolarWatchTest.csproj": {
+    "D:\\Projektek\\Advance\\SolarWatch\\SolarWatchTest\\SolarWatchTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatchTest\\SolarWatchTest.csproj",
+        "projectUniqueName": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatchTest\\SolarWatchTest.csproj",
         "projectName": "SolarWatchTest",
-        "projectPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatchTest\\SolarWatchTest.csproj",
+        "projectPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatchTest\\SolarWatchTest.csproj",
         "packagesPath": "C:\\Users\\dudwa\\.nuget\\packages\\",
-        "outputPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatchTest\\obj\\",
+        "outputPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatchTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dudwa\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch\\SolarWatch.csproj": {
-                "projectPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch\\SolarWatch.csproj"
+              "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch.csproj": {
+                "projectPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch\\SolarWatch.csproj": {
+    "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch\\SolarWatch.csproj",
+        "projectUniqueName": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch.csproj",
         "projectName": "SolarWatch",
-        "projectPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch\\SolarWatch.csproj",
+        "projectPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch.csproj",
         "packagesPath": "C:\\Users\\dudwa\\.nuget\\packages\\",
-        "outputPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\SolarWatch\\obj\\",
+        "outputPath": "D:\\Projektek\\Advance\\SolarWatch\\SolarWatch\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dudwa\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -120,6 +120,16 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.18, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
