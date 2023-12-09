@@ -11,9 +11,8 @@ public class CoordinateToSolarConverter
     {
         try
         {
-            string url = $"https://api.sunrise-sunset.org/json?lat={coordinate.Lat}&lng={coordinate.Lon}&date={date}";
+            string url = $"https://api.sunrise-sunset.org/json?lat={coordinate.Lat}&lng={coordinate.Lon}&date={date.Year}-{date.Month}-{date.Day}";
             HttpResponseMessage response = await client.GetAsync(url);
-
             if (response.IsSuccessStatusCode)
             {
                 string content = await response.Content.ReadAsStringAsync();

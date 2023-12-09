@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SolarWatch.Model;
 using SolarWatch.Service.CityToCoordinates;
@@ -10,13 +11,15 @@ namespace SolarWatch.Controllers;
 public class SolarController : ControllerBase
 {
     
-    [HttpGet("GetSunrise/",Name = "/GetSunrise")]
+    [HttpGet("getsunrise/{city}/{date}",Name = "GetSunrise"), /*Authorize*/]
     public async Task<SolarData> GetSunrise(string city, DateTime date)
     {
+        /*var data = await GetSolarData(city, date, "sunrise");
+        Console.WriteLine(data.City);*/
         return await GetSolarData(city, date, "sunrise");
     }
     
-    [HttpGet("GetSunset/",Name = "/GetSunset")]
+    [HttpGet("getsunset/{city}/{date}",Name = "GetSunset"), /*Authorize*/]
     public async Task<SolarData> GetSunset(string city, DateTime date)
     {
         return await GetSolarData(city, date, "sunset");
@@ -34,7 +37,7 @@ public class SolarController : ControllerBase
             coordinates = new Coordinate(46.253, 20.14824);
             city = "szeged";
         }
-
+        
         var sunriseTime = await solarConverter.ConvertCoordinatesToSolar(coordinates, date, sunsetOrSunrise);
 
         if (sunriseTime == "{}")
